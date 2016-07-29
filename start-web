@@ -48,9 +48,9 @@ else
 fi
 
 # Replace the value of latitude and longtitude
-index_file=controller/views/index.erb
-sed -i "" "s/var START_LATITUDE.*$/var START_LATITUDE = \"$latitude\"\;/g" $index_file
-sed -i "" "s/var START_LONGTITUDE.*$/var START_LONGTITUDE = \"$longtitude\"\;/g" $index_file
+application_js_file=controller/public/application.js
+sed -i "" "s/var START_LATITUDE.*$/var START_LATITUDE = \"$latitude\"\;/g" $application_js_file
+sed -i "" "s/var START_LONGTITUDE.*$/var START_LONGTITUDE = \"$longtitude\"\;/g" $application_js_file
 echo
 echo
 
