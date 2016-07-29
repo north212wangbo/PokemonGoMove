@@ -85,5 +85,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="application.js"></script>
-  </body>
+  	<script type="text/javascript">
+	    var START_LATITUDE = "37.3239";
+	    var START_LONGTITUDE = "-121.9144";
+      $('document').ready(function() {
+        $("#latitude").val(START_LATITUDE);
+        $("#longitude").val(START_LONGTITUDE);
+        $("#address").val("Enter address here...");
+        var app = new App(parseFloat(START_LATITUDE), parseFloat(START_LONGTITUDE));
+      })
+    </script>
+	</body>
 </html>
